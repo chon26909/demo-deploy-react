@@ -1,0 +1,13 @@
+services:
+
+  demo-react:
+    image: chon26909/demo-react:latest
+    container_name: demo-react
+    ports:
+      - 8000:80
+    expose:
+      - 8000
+
+networks:
+  default:
+    name: app
